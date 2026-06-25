@@ -1,24 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Old Mutual Chat Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Mutual Zimbabwe - Live Chat Test</title>
 
     <style>
-        body{
-            font-family:Segoe UI;
-            margin:60px;
-            background:#f5f5f5;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        h1{
-            color:#006341;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
         }
 
-        .card{
-            background:white;
-            padding:30px;
-            border-radius:8px;
-            box-shadow:0 0 10px rgba(0,0,0,.1);
+        header {
+            background: #006341;
+            color: white;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-weight: normal;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: #f4f7f4;
+            padding: 80px 50px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #006341;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            background: #7AB800;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 60px 50px;
+        }
+
+        .section h2 {
+            color: #006341;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #006341;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #003D29;
+            color: white;
+            padding: 35px 50px;
+            text-align: center;
         }
     </style>
 
@@ -26,21 +103,91 @@
 
 <body>
 
-<div class="card">
+<header>
 
-<h1>Old Mutual Chat Test</h1>
+    <h2>Old Mutual Zimbabwe</h2>
 
-<p>
-This website is used for testing Dynamics 365 Contact Center Web Chat.
-</p>
+    <nav>
+        <a href="#">Personal</a>
+        <a href="#">Business</a>
+        <a href="#">Investments</a>
+        <a href="#">Claims</a>
+        <a href="#">Contact</a>
+    </nav>
 
-</div>
+</header>
 
-<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-eur.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" onerror="(function(el){el.parentNode.removeChild(el);var s=document.createElement('script');s.src='https://ocprodpubliceurgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');s.setAttribute('data-app-id', '503ad542-027a-4cc8-9d68-e0f09cdc2a3b');s.setAttribute('data-lcw-version', 'prod');s.setAttribute('data-org-id', 'b8415446-69bc-ef11-b8e2-000d3a2e085d');s.setAttribute('data-org-url', 'https://m-b8415446-69bc-ef11-b8e2-000d3a2e085d.eu.omnichannelengagementhub.com');document.body.appendChild(s);})(this);" data-app-id="503ad542-027a-4cc8-9d68-e0f09cdc2a3b" data-lcw-version="prod" data-org-id="b8415446-69bc-ef11-b8e2-000d3a2e085d" data-org-url="https://m-b8415446-69bc-ef11-b8e2-000d3a2e085d.eu.omnichannelengagementhub.com" async></script>
+<section class="hero">
+
+    <h1>The solutions to your financial needs</h1>
+
+    <p>
+        Protect what matters most and plan for a brighter future.
+        Explore insurance, investments and financial services tailored for you.
+    </p>
+
+    <a href="#" class="button">Learn More</a>
+
+</section>
+
+<section class="section">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Life Insurance</h3>
+            <p>Secure your family's future with comprehensive life cover.</p>
+        </div>
+
+        <div class="card">
+            <h3>Medical Insurance</h3>
+            <p>Affordable healthcare solutions for individuals and businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Investments</h3>
+            <p>Grow your wealth through our investment and savings products.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Solutions</h3>
+            <p>Financial products designed to help your business thrive.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" style="background:#f8f8f8;">
+
+    <h2>Need Assistance?</h2>
+
+    <p>
+        Our customer service team is available through the live chat widget in the
+        bottom-right corner of this page.
+    </p>
+
+</section>
+
+<footer>
+
+    © 2026 Old Mutual Zimbabwe (Demo Website for Dynamics 365 Contact Center Testing)
+
+</footer>
+
+<!-- Dynamics 365 Contact Center Live Chat -->
 
 <script
-id="Microsoft_Omnichannel_LCWidget"
-src="YOUR_WIDGET_SCRIPT">
+    id="Microsoft_Omnichannel_LCWidget"
+    src="https://oc-cdn-public-eur.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+    onerror="(function(el){el.parentNode.removeChild(el);var s=document.createElement('script');s.src='https://ocprodpubliceurgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';s.setAttribute('id','Microsoft_Omnichannel_LCWidget');s.setAttribute('data-app-id','503ad542-027a-4cc8-9d68-e0f09cdc2a3b');s.setAttribute('data-lcw-version','prod');s.setAttribute('data-org-id','b8415446-69bc-ef11-b8e2-000d3a2e085d');s.setAttribute('data-org-url','https://m-b8415446-69bc-ef11-b8e2-000d3a2e085d.eu.omnichannelengagementhub.com');document.body.appendChild(s);})(this);"
+    data-app-id="503ad542-027a-4cc8-9d68-e0f09cdc2a3b"
+    data-lcw-version="prod"
+    data-org-id="b8415446-69bc-ef11-b8e2-000d3a2e085d"
+    data-org-url="https://m-b8415446-69bc-ef11-b8e2-000d3a2e085d.eu.omnichannelengagementhub.com"
+    async>
 </script>
 
 </body>
